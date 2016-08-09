@@ -33,8 +33,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  # Changed this from 'byebug'
+  gem 'rspec-rails', '~> 2.0'
+end
+# Added this...I'm not sure if it will break or not we'll see what happens
+group :test do
+	gem 'capybara', '~> 2.1.0'
 end
 
 group :development do
