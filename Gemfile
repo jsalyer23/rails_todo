@@ -23,6 +23,8 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'pry'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -34,11 +36,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   # Changed this from 'byebug'
-  gem 'rspec-rails', '~> 2.0'
+  gem 'rspec-rails', '~> 3.0'
 end
 # Added this...I'm not sure if it will break or not we'll see what happens
 group :test do
-	gem 'capybara', '~> 2.1.0'
+	gem 'capybara', '~> 2.2.0'
 end
 
 group :development do
