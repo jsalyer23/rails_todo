@@ -40,7 +40,7 @@ group :development, :test do
 end
 # Added this...I'm not sure if it will break or not we'll see what happens
 group :test do
-	gem 'capybara', '~> 2.2.0'
+	gem 'capybara', '~> 2.3.0'
 end
 
 group :development do
