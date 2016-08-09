@@ -43,6 +43,7 @@ end
 # Added this...I'm not sure if it will break or not we'll see what happens
 group :test do
 	gem 'capybara', '~> 2.3.0'
+	gem 'shoulda-matchers'
 end
 
 group :development do
