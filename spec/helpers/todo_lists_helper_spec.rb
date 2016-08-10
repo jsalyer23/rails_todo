@@ -10,6 +10,6 @@ require 'spec_helper'
 #     end
 #   end
 # end
-describe TodoListsHelper do
-  skip "add some examples to (or delete) #{__FILE__}"
-end
+# describe TodoListsHelper do
+#   skip "add some examples to (or delete) #{__FILE__}"
+# end
