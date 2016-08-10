@@ -1,5 +1,5 @@
-require 'rails_helper'
+require 'spec_helper'
 
-RSpec.describe TodoItem, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe TodoItem do
+  it { should belong_to(:todo_list) }
 end
