@@ -1,6 +1,7 @@
 class TodoItemsController < ApplicationController
   def index
   	@todo_list = TodoList.find(params[:todo_list_id])
+    @todo_items = TodoItem.where(todo_list_id: @todo_list.id)
   end
 
   def new
@@ -22,6 +23,7 @@ class TodoItemsController < ApplicationController
   end
 
   def show
+    @todo_items = TodoItem.where(todo_list_id: params[:todo_list_id])
   end
 
   private
