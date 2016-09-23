@@ -3,9 +3,16 @@
 
 <p>
   <strong>Content:</strong>
-  <%= @todo_item %>
+  <ul class="todo_items">
+  	<% @todo_items.each do |item| %>
+  		<li>
+  			<%= item.content %>
+  		</li>
+  	<% end %>
+  </ul>
+  
 </p>
 
 
 <%= link_to 'Edit', edit_todo_list_todo_item_path %> |
-<%= link_to 'Back', todo_list_todo_item_path %>
+<%= link_to 'Back', todo_list_todo_items_path %>
